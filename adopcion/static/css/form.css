@@ -1,6 +1,6 @@
 .caja{
-    width: 100%;
-    background: bisque;
+    width: 5px;
+    background: black;
 }
 
 #fotoPerro{
@@ -11,7 +11,7 @@
 
 form{
     margin-top: 65px;
-    background: bisque;
+    background: black;
     padding-left: 10px;
     text-align: center;
     font-size: 18px;
@@ -19,12 +19,12 @@ form{
 
 form h2{
     text-align: center;
-    font-size: 30px; 
+    font-size: 30px;
 }
 
 form h4{
-    text-decoration:underline;  
-    font-size: 23px; 
+    text-decoration:underline;
+    font-size: 23px;
 }
 
 
@@ -103,7 +103,7 @@ form button a:hover{
     form{
         text-align: left;
     }
-    
+
     #fotoPerro{
         text-align: center;
         margin: auto;
@@ -113,27 +113,27 @@ form button a:hover{
 
 @media (max-width: 467px){
     #name{
-        margin-right: 100px; 
+        margin-right: 100px;
     }
 
     #lastname{
-        margin-right: 100px; 
+        margin-right: 100px;
     }
-    
+
     #run{
-        margin-right: 150px; 
+        margin-right: 150px;
     }
 
     #date{
-        margin-right: 150px; 
-    }
-    
-    #fono{
-        margin-right: 100px; 
+        margin-right: 150px;
     }
 
     #fono{
-        margin-right: 100px; 
+        margin-right: 100px;
+    }
+
+    #fono{
+        margin-right: 100px;
     }
 
     #casa{
@@ -143,7 +143,7 @@ form button a:hover{
     /* Estilos de form 2 */
 
     #race{
-        margin-right: 100px; 
+        margin-right: 100px;
     }
 
     #desc{

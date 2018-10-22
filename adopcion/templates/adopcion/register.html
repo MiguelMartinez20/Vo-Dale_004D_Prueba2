@@ -1,0 +1,16 @@
+{% extends 'adopcion/base.html' %}
+
+{% block content %}
+    <form action="." method="POST">
+        <h2>Registro de Usuario</h2>
+        <br>
+        <h4>Datos de la Cuenta</h4> 
+        <div class="caja">
+            {% csrf_token %}
+            {{ form.as_p }}
+        <br>    
+        <button role="button">Registrar Cuenta</button>
+        <br>    
+        </div>
+    </form> 
+{% endblock %}
