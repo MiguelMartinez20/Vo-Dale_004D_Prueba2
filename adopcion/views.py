@@ -27,7 +27,7 @@ def register_view(request):
             password_two = form.cleaned_data['password_two']
             u = User.objects.create_user(username=usuario,first_name=nombre,last_name=apellido, email=email, password=password_one, is_staff=True)
             u.save()
-            return render(request, 'adopcion/index.html', {})
+            return render(request, 'adopcion/welcome.html', {})
         else:
             ctx = {'form':form}
             return render(request, 'adopcion/register.html', ctx)
