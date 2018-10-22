@@ -7,3 +7,6 @@ def misperris(request):
 
 def form1(request):
     return render(request, 'adopcion/form.html', {})
+
+def prueba(request):
+    return render(request, 'adopcion/prueba.html', {})

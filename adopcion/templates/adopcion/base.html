@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mis Perris</title>
+    <link rel="icon" href="{% static 'adopcion/img/icono.png' %}">
+    <link rel="stylesheet" href="{% static 'adopcion/css/form.css' %}">
+    <link rel="stylesheet" href="{% static 'adopcion/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'adopcion/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'adopcion/css/mainForm.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div role="banner" class="contenedor">
+            <h1 role="heading"><a role="link" href="http://migmartinezm.pythonanywhere.com/">&#128054; Mis Perris</a> </h1>
+            <input role="checkbox" type="checkbox" id="btn-menu">
+            <label role="button" for="btn-menu"><b>&#9776;</b></label>
+
+            <nav role="menu" class="menu">
+                <ul>
+                    <li role="menuitem"><b><a role="link" href="http://migmartinezm.pythonanywhere.com/">Inicio</a></b></li>
+                    <li role="menuitem"><b><a role="link" href="#">Adopciones</a></b></li>
+                    <li role="menuitem"><b><a role="link" href="#">Donaciones</a> </b></li>
+                    <li role="menuitem"><b><a role="link" href="http://migmartinezm.pythonanywhere.com/form">Registrarme</a> </b></li>
+                    <li role="menuitem"><b><a role="link" href="http://migmartinezm.pythonanywhere.com/admin">Iniciar Sesion</a> </b></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+        {% block content %}
+
+        {% endblock %}
+
+    <footer>
+        <h3 role="heading" id="footer_up">Contacto</h3>
+        <a role="link" href="+569 5678 4512">+569 5678 4512</a>
+        <h3 role="heading">Correo Electronico</h3>
+        <a role="link" href="MisperrisCompanion@Gmail.com">MisperrisCompanion@Gmail.com</a>
+        <h3 role="heading">Redes Sociales</h3>
+        <a role="link" href="https://www.instagram.com/?hl=es-la">Mis_Perris_Oficial &#128247; Instagram</a>
+        <br>
+        <a role="link" href="https://www.facebook.com/" id="footer_down">Fanpage Facebook &#128077;</a>
+        <p style="color: white; font-size: 20px; padding-left: 10px; ">Todos los derechos Reservados &#169;</p>
+
+    </footer>
+    <script src="{% static 'adopcion/js/form.js' %}"> </script>
+</body>
+</html>
