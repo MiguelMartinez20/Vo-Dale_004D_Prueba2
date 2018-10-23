@@ -15,7 +15,7 @@ class RegisterForm(forms.Form):
             u = User.objects.get(username=username)
         except User.DoesNotExist:
             return username
-        raise forms.ValidationError("El usuario ya Existe")
+        raise forms.ValidationError("El nombre de usuario ya esta Ocupado")
 
     def clean_email(self):
         email = self.cleaned_data['email']
@@ -23,7 +23,7 @@ class RegisterForm(forms.Form):
             u = User.objects.get(email=email)
         except User.DoesNotExist:
             return email
-        raise forms.ValidationError("Email ya Registrado")
+        raise forms.ValidationError("Email ya se encuentra Registrado, ingrese otro")
 
     def clean_password_two(self):
         password_one = self.cleaned_data['password_one']
