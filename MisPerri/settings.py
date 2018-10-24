@@ -126,3 +126,24 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static')
+
+#Envio de Correos
+
+EMAIL_HOST = 'smtp.gmail.com'
+DEFAULT_FROM_EMAIL = 'empresamisperris@gmail.com'
+SERVER_EMAIL = 'empresamisperris@gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'empresamisperris@gmail.com'
+EMAIL_HOST_PASSWORD = '123pormi'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+
+
+
+
+
+
+
+
+
+
