@@ -1,0 +1,24 @@
+{% extends 'adopcion/base.html' %}
+
+{% block content %}
+
+    <main>
+        <section role="region" id="galeria">
+                <h3 role="heading" id="galleryTitle"><b>Adopciones</b> </h3>
+                <div role="figure" class="contenedor">
+
+                        {% for dog in dogs %}
+                        <article role="article">
+                            <h5 id="DogName"><b>{{ dog }}</b></h5>
+                            <img src="{{ dog.photo.url }}" >
+                            <p><b>Raza: </b>{{ dog.race }}</p>
+                            <p><b>Descripcion: </b> {{ dog.description }}</p>
+                            <p><b>Estado: </b>{{ dog.state }}</p>
+                        </article>
+                        {% endfor %}
+
+                </div>
+        </section>
+    </main>
+
+{% endblock %}

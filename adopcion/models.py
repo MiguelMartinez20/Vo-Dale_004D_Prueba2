@@ -3,11 +3,22 @@ from django.db import models
 # Create your models here.
 
 class Dog(models.Model):
-    photo = models.ImageField(upload_to='dog_image', blank=False)
-    name = models.CharField(max_length=30, min_length=1)
-    race = models.CharField(max_length=30, min_length=1)
-    description = models.CharField(max_length=100, min_length=5)
-    state = models.CharField()
+
+    RESCATADO = 'Rescatado'
+    DISPONIBLE = 'Disponible'
+    ADOPTADO = 'Adoptado'
+
+    STATE_CHOICES = (
+        (RESCATADO, 'Rescatado'),
+        (DISPONIBLE, 'Disponible'),
+        (ADOPTADO, 'Adoptado'),
+    )
+
+    photo = models.ImageField(upload_to='dog_image')
+    name = models.CharField(max_length=30)
+    race = models.CharField(max_length=30)
+    description = models.CharField(max_length=100)
+    state = models.CharField(max_length=10, choices=STATE_CHOICES, default=RESCATADO)
 
     def publish(self):
         self.save()

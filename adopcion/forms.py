@@ -33,3 +33,14 @@ class RegisterForm(forms.Form):
             pass
         else:
             raise forms.ValidationError("Las contraseñas no coinciden")
+
+#class SelectStateForm(forms.Form):
+#    Rescatado = 'Rescatado'
+#    Adoptado = 'Adoptado'
+#    Disponible = 'Disponible'
+#    STATE_CHOICES = (
+#        (Rescatado, u"Rescatado"),
+#        (Adoptado, u"Adoptado"),
+#        (Disponible, u"Disponible")
+#    )
+#    states = forms.ChoiceField(choices=STATE_CHOICES)

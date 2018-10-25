@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
-from django.template import RequestContext
 from adopcion.forms import RegisterForm
 from django.contrib.auth.models import User
+from .models import Dog
 
 # Create your views here.
 
@@ -36,5 +36,10 @@ def register_view(request):
 
 def loginview(request):
     url = "http://migmartinezm.pythonanywhere.com/admin"
-    return redirect (url)
+    return redirect(url)
+
+def dog_list(request):
+    dogs= Dog.objects.all()
+    return render(request, 'adopcion/gallery.html', {'dogs': dogs})
+
 
