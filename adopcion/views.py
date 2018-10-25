@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.template import RequestContext
 from adopcion.forms import RegisterForm
 from django.contrib.auth.models import User
@@ -33,4 +33,8 @@ def register_view(request):
             return render(request, 'adopcion/register.html', ctx)
     ctx = {'form':form}
     return render(request, 'adopcion/register.html', ctx)
+
+def loginview(request):
+    url = "http://migmartinezm.pythonanywhere.com/admin"
+    return redirect (url)
 
