@@ -1,7 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from adopcion.forms import RegisterForm
 from django.contrib.auth.models import User
-from .models import Dog
+from .models import Dog, AdoptionRegister
 
 # Create your views here.
 
@@ -39,7 +39,23 @@ def loginview(request):
     return redirect(url)
 
 def dog_list(request):
-    dogs= Dog.objects.all()
+    dogs= Dog.objects.filter(state="Disponible")
     return render(request, 'adopcion/gallery.html', {'dogs': dogs})
+
+def dog_detail(request, pk):
+    dog = get_object_or_404(Dog, pk=pk)
+
+    if (request.method == "POST"):
+
+        owner = request.user
+        AdoptionRegister.objects.create(owner=owner, dogname=dog.name)
+        dog.update()
+
+        url = "http://migmartinezm.pythonanywhere.com/adopcion/"
+        return redirect(url)
+    else:
+        return render(request, 'adopcion/dog_detail.html', {'dog': dog})
+
+
 
 
