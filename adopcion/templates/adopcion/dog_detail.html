@@ -3,13 +3,13 @@
 {% block content %}
 
     <main>
-        <section role="region" id="galeria">
-                <h3 role="heading" id="galleryTitle"><b>Adopciones</b> </h3>
+        <section id="galeria">
+                <h3 id="galleryTitle"><b>Adopciones</b> </h3>
                 <div role="figure" class="contenedor">
-                        <article role="article">
+                        <article>
                             <form method="POST">{% csrf_token %}
                                 <h5 id="DogName"><b>{{ dog }}</b></h5>
-                                <img src="{{ dog.photo.url }}" >
+                                <img src="{{ dog.photo.url }}" alt="Perro Detalle" >
                                 <p><b>Raza: </b>{{ dog.race }}</p>
                                 <p><b>Descripcion: </b> {{ dog.description }}</p>
                                 <p><b>Estado: </b>{{ dog.state }}</p>

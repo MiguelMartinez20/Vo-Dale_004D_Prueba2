@@ -3,14 +3,14 @@
 {% block content %}
 
     <main>
-        <section role="region" id="galeria">
-                <h3 role="heading" id="galleryTitle"><b>Adopciones</b> </h3>
+        <section id="galeria">
+                <h3 id="galleryTitle"><b>Adopciones</b> </h3>
                 <div role="figure" class="contenedor">
 
                         {% for dog in dogs %}
-                        <article role="article">
+                        <article>
                             <h5 id="DogName"><b><a href="{% url 'dog_detail' pk=dog.pk %}">{{ dog }}</a></b></h5>
-                            <img src="{{ dog.photo.url }}" >
+                            <img src="{{ dog.photo.url }}" alt="Perro Disponible">
                             <p><b>Raza: </b>{{ dog.race }}</p>
                             <p><b>Descripcion: </b> {{ dog.description }}</p>
                             <p><b>Estado: </b>{{ dog.state }}</p>

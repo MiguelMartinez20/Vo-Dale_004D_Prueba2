@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,26 +24,26 @@
 <body>
     <header>
         <div role="banner" class="contenedor">
-            <h1 role="heading"><a role="link" href="http://migmartinezm.pythonanywhere.com">&#128054; Mis Perris</a> </h1>
-            <input role="checkbox" type="checkbox" id="btn-menu">
-            <label role="button" for="btn-menu"><b>&#9776;</b></label>
+            <h1><a href="http://migmartinezm.pythonanywhere.com">&#128054; Mis Perris</a> </h1>
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"><b>&#9776;</b></label>
 
-            <nav role="menu" class="menu">
-                <ul>
-                    <li role="menuitem"><b><a role="link" href="http://migmartinezm.pythonanywhere.com">Inicio</a></b></li>
-                    <li role="menuitem"><b><a role="link" href="http://migmartinezm.pythonanywhere.com/adopcion">Adopciones</a></b></li>
-                    <li role="menuitem"><b><a role="link" href="https://www.paypal.com/cl/home">Donaciones</a> </b></li>
-                    <li role="menuitem"><b><a role="link" href="http://migmartinezm.pythonanywhere.com/registro">Registrarme</a> </b></li>
-                    <li role="menuitem"><b><a role="link" href="http://migmartinezm.pythonanywhere.com/admin/login/?next=/admin/">Iniciar Sesión</a> </b></li>
+            <nav class="menu">
+                <ul role=menu>
+                    <li role="menuitem"><b><a href="http://migmartinezm.pythonanywhere.com">Inicio</a></b></li>
+                    <li role="menuitem"><b><a href="http://migmartinezm.pythonanywhere.com/adopcion">Adopciones</a></b></li>
+                    <li role="menuitem"><b><a href="https://www.paypal.com/cl/home">Donaciones</a> </b></li>
+                    <li role="menuitem"><b><a href="http://migmartinezm.pythonanywhere.com/registro">Registrarme</a> </b></li>
+                    <li role="menuitem"><b><a href="http://migmartinezm.pythonanywhere.com/admin/login/?next=/admin/">Iniciar Sesión</a> </b></li>
                 </ul>
             </nav>
         </div>
 
     </header>
-    <main role="main">
-        <section role="region" id="Slogan">
+    <main>
+        <section id="Slogan">
             <div class="contenedor">
-                        <article role="article">
+                        <article>
                             <div role="complementary" class="container">
 
                                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -70,7 +70,7 @@
                                     </div>
 
                                     <div class="item">
-                                        <img src="{% static 'adopcion/img/carrusel4.jpg' %}" style="width:100%;">
+                                        <img src="{% static 'adopcion/img/carrusel4.jpg' %}" alt="Familia carrusel 4" style="width:100%;">
                                       </div>
                                   </div>
 
@@ -86,10 +86,10 @@
                                 </div>
                               </div>
                         </article>
-                        <article role="article">
-                            <h2 role="heading">Ellos Buscan y Necesitan un Hogar</h2>
-                            <h2 role="heading">¡Tú puedes dárselos!</h2>
-                            <button role="button" type="button"><a role="link" href="http://migmartinezm.pythonanywhere.com/registro">Registrarme Ahora</a></button>
+                        <article>
+                            <h2>Ellos Buscan y Necesitan un Hogar</h2>
+                            <h2>¡Tú puedes dárselos!</h2>
+                            <button type="button"><a href="http://migmartinezm.pythonanywhere.com/registro">Registrarme Ahora</a></button>
                             <p>
                                 <b>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat mauris eu erat sagittis, eget cursus
@@ -104,125 +104,125 @@
         </section>
 
 
-            <section role="region" id="blog">
+            <section id="blog">
                 <div role="navigation" class="contenedor">
-                        <article role="article" class="item1">
-                            <a role="link" href="http://migmartinezm.pythonanywhere.com/adopcion"><h2>¡Quiero Adoptar!</h2></a>
-                            <a role="link" href="http://migmartinezm.pythonanywhere.com/adopcion"><img role="img" src="{% static 'adopcion/img/perro-1.jpg' %}" alt="perro1"></a>
+                        <article class="item1">
+                            <a href="http://migmartinezm.pythonanywhere.com/adopcion"><h2>¡Quiero Adoptar!</h2></a>
+                            <a href="http://migmartinezm.pythonanywhere.com/adopcion"><img src="{% static 'adopcion/img/perro-1.jpg' %}" alt="perro1"></a>
                             <p>Genial, Encuentra a tu nuevo compañero de vida AQUÍ</p>
                         </article>
-                        <article role="article" class="item2">
-                            <a role="link" href="#galeria"><h2>Dejar en adopción</h2></a>
-                            <a role="link" href="#galeria"><img role="img" src="{% static 'adopcion/img/perro-3.jpg' %}" alt="perro3"></a>
+                        <article class="item2">
+                            <a href="#galeria"><h2>Dejar en adopción</h2></a>
+                            <a href="#galeria"><img src="{% static 'adopcion/img/perro-3.jpg' %}" alt="perro3"></a>
                             <p>Necesitas ayuda y no encuentras un lugar para tu cachorro, no te preocupes nosotros encontraremos una nueva familia</p>
                         </article>
-                        <article role="article" class="item3">
-                            <a role="link" href="https://www.paypal.com/cl/home"><h2>Quiero Contribuir</h2></a>
-                            <a role="link" href="https://www.paypal.com/cl/home"><img role="img" src="{% static 'adopcion/img/perro-4.jpg' %}" alt="perro4"></a>
+                        <article class="item3">
+                            <a href="https://www.paypal.com/cl/home"><h2>Quiero Contribuir</h2></a>
+                            <a href="https://www.paypal.com/cl/home"><img src="{% static 'adopcion/img/perro-4.jpg' %}" alt="perro4"></a>
                             <p> Ayúdanos a seguir nuestra noble cruzada, aceptamos donaciones por diversos medios, entérate AQUÍ!!</p>
                         </article>
-                        <article role="article" class="item4">
-                            <a role="link" href="#"><h2>Nuetra Misión y Visión</h2></a>
-                            <a role="link" href="#"><img role="img" src="{% static 'adopcion/img/perro-17.jpg' %}" alt="perro17"></a>
+                        <article class="item4">
+                            <a href="#"><h2>Nuetra Misión y Visión</h2></a>
+                            <a href="#"><img src="{% static 'adopcion/img/perro-17.jpg' %}" alt="perro17"></a>
                             <p> Quienes somos y que es lo que queremos lograr  </p>
                         </article>
                 </div>
             </section>
 
-            <section role="region" id="galeria">
-                <h3 role="heading"><b>Galería de Fotos</b> </h3>
+            <section id="galeria">
+                <h3><b>Galería de Fotos</b> </h3>
                 <div role="figure" class="contenedor">
-                    <article role="article">
-                        <img role="img" src="{% static 'adopcion/img/perro-12.jpg' %}" alt="perro12">
-                        <h4 role="heading">Cortachurro</h4>
+                    <article>
+                        <img src="{% static 'adopcion/img/perro-12.jpg' %}" alt="perro12">
+                        <h4>Cortachurro</h4>
                         <p><b>Raza:</b> Akita</p>
                         <p><b>Tamaño:</b> Mediano</p>
                         <p><b>Sexo:</b> Macho</p>
                         <p><b>Personalidad:</b> Muy tranquilo, gusta de tomar siestas a menudo, no necesita mucho ejercicio</p>
                     </article>
-                    <article role="article">
-                        <img role="img" src="{% static 'adopcion/img/perro-5.jpg' %}" alt="perro5">
-                        <h4 role="heading">Firulais</h4>
+                    <article>
+                        <img src="{% static 'adopcion/img/perro-5.jpg' %}" alt="perro5">
+                        <h4>Firulais</h4>
                         <p><b>Raza:</b> Akita</p>
                         <p><b>Tamaño:</b> Mediano</p>
                         <p><b>Sexo:</b> Macho</p>
                         <p><b>Personalidad:</b> Muy juguetón, gusta de los lugares abiertos, necesita mucho ejercicio. </p>
                     </article>
-                    <article role="article">
-                        <img role="img" src="{% static 'adopcion/img/perro-6.jpg' %}" alt="perro6">
-                        <h4 role="heading">Repetido</h4>
+                    <article>
+                        <img src="{% static 'adopcion/img/perro-6.jpg' %}" alt="perro6">
+                        <h4>Repetido</h4>
                         <p><b>Raza:</b> Mestizo</p>
                         <p><b>Tamaño:</b> Grande</p>
                         <p><b>Sexo:</b> Macho</p>
                         <p><b>Personalidad:</b> Fiel compañero de viajes, le gusta mucho pasear, es muy activo (Perro de la derecha).</p>
                     </article>
-                    <article role="article">
-                        <img role="img" src="{% static 'adopcion/img/perro-7.jpg' %}" alt="perro7">
-                        <h4 role="heading">Slinky</h4>
+                    <article>
+                        <img src="{% static 'adopcion/img/perro-7.jpg' %}" alt="perro7">
+                        <h4>Slinky</h4>
                         <p><b>Raza:</b> Dachshund</p>
                         <p><b>Tamaño:</b> Mediano</p>
                         <p><b>Sexo:</b> Macho</p>
                         <p><b>Personalidad:</b> Excelente perro de compañia, no necesita mucho espacio, muy apegado a la gente</p>
                     </article>
-                    <article role="article">
-                        <img role="img" src="{% static 'adopcion/img/perro-8.jpg' %}" alt="perro8">
-                        <h4 role="heading">Playita</h4>
+                    <article>
+                        <img src="{% static 'adopcion/img/perro-8.jpg' %}" alt="perro8">
+                        <h4>Playita</h4>
                         <p><b>Raza:</b> Cocker</p>
                         <p><b>Tamaño:</b> Pequeño</p>
                         <p><b>Sexo:</b> Hembra</p>
                         <p><b>Personalidad:</b> Al ser cachorro necesita mucho cariño y atención, muy dormilona</p>
                     </article>
-                    <article role="article">
-                        <img role="img" src="{% static 'adopcion/img/perro-9.jpg' %}" alt="perro9">
-                        <h4 role="heading">Cholo</h4>
+                    <article>
+                        <img src="{% static 'adopcion/img/perro-9.jpg' %}" alt="perro9">
+                        <h4>Cholo</h4>
                         <p><b>Raza:</b> Mestizo</p>
                         <p><b>Tamaño:</b> Pequeño</p>
                         <p><b>Sexo:</b> Macho</p>
                         <p><b>Personalidad:</b> Un cachorro muy energético que gusta de correr y ensuciarse.</p>
                     </article>
-                    <article role="article">
-                        <img role="img" src="{% static 'adopcion/img/perro-10.jpg' %}" alt="perro10">
-                        <h4 role="heading">Yo No Fui</h4>
+                    <article>
+                        <img src="{% static 'adopcion/img/perro-10.jpg' %}" alt="perro10">
+                        <h4>Yo No Fui</h4>
                         <p><b>Raza:</b> Labrador</p>
                         <p><b>Tamaño:</b> Grande</p>
                         <p><b>Sexo:</b> Macho</p>
                         <p><b>Personalidad:</b> Muy fiel a su dueño, una raza caracterizada por llevarse bien con los niños</p>
                     </article>
-                    <article role="article">
-                        <img role="img" src="{% static 'adopcion/img/perro-11.jpg' %}" alt="perro11">
-                        <h4 role="heading">Tepo Tepo</h4>
+                    <article>
+                        <img src="{% static 'adopcion/img/perro-11.jpg' %}" alt="perro11">
+                        <h4>Tepo Tepo</h4>
                         <p><b>Raza:</b> Akita</p>
                         <p><b>Tamaño:</b> Mediano</p>
                         <p><b>Sexo:</b> Macho</p>
                         <p><b>Personalidad:</b> Muy tímido con la gente, necesita tiempo para adaptarse a nuevos lugares</p>
                     </article>
-                    <article role="article">
-                        <img role="img" src="{% static 'adopcion/img/perro-13.jpg' %}" alt="perro13">
-                        <h4 role="heading">Coliforme</h4>
+                    <article>
+                        <img src="{% static 'adopcion/img/perro-13.jpg' %}" alt="perro13">
+                        <h4>Coliforme</h4>
                         <p><b>Raza:</b> Yorkshire</p>
                         <p><b>Tamaño:</b> Pequeño</p>
                         <p><b>Sexo:</b> Hembra</p>
                         <p><b>Personalidad:</b> Muy apegada a sus dueños, puede sentir ansiedad si se le deja sola por mucho tiempo</p>
                     </article>
-                    <article role="article">
-                        <img role="img" src="{% static 'adopcion/img/perro-14.jpg' %}" alt="perro14">
-                        <h4 role="heading">Fierro Malo</h4>
+                    <article>
+                        <img src="{% static 'adopcion/img/perro-14.jpg' %}" alt="perro14">
+                        <h4>Fierro Malo</h4>
                         <p><b>Raza:</b> Beagle</p>
                         <p><b>Tamaño:</b> Mediano</p>
                         <p><b>Sexo:</b> Macho</p>
                         <p><b>Personalidad:</b> Perro familiar que gusta de jugar con los niños. Perrito Hush Puppies</p>
                     </article>
-                    <article role="article">
-                        <img role="img" src="{% static 'adopcion/img/perro-15.jpg' %}" alt="perro15">
-                        <h4 role="heading">Neumatex</h4>
+                    <article>
+                        <img src="{% static 'adopcion/img/perro-15.jpg' %}" alt="perro15">
+                        <h4>Neumatex</h4>
                         <p><b>Raza:</b> Pug</p>
                         <p><b>Tamaño:</b> Pequeño</p>
                         <p><b>Sexo:</b> Macho</p>
                         <p><b>Personalidad:</b> Perro muy tranquilo ideal para espacios reducidos, necesita muchos cuidados.</p>
                     </article>
-                    <article role="article">
-                        <img role="img" src="{% static 'adopcion/img/perro-16.jpg' %}" alt="perro16">
-                        <h4 role="heading">Etcétera</h4>
+                    <article>
+                        <img src="{% static 'adopcion/img/perro-16.jpg' %}" alt="perro16">
+                        <h4>Etcétera</h4>
                         <p><b>Raza:</b> Mestizo</p>
                         <p><b>Tamaño:</b> Grande</p>
                         <p><b>Sexo:</b> Macho</p>
@@ -233,14 +233,14 @@
     </main>
 
     <footer>
-        <h3 role="heading" id="footer_up">Contacto</h3>
-        <a role="link" href="tel: +569 5678 4512">+569 5678 4512</a>
-        <h3 role="heading">Correo Electronico</h3>
-        <a role="link" href="mailto:empresamisperris@gmail.com">empresamisperris@gmail.com</a>
-        <h3 role="heading">Redes Sociales</h3>
-        <a role="link" href="https://www.instagram.com/?hl=es-la">Mis_Perris_Oficial &#128247; Instagram</a>
+        <h3 id="footer_up">Contacto</h3>
+        <a href="tel:+56956784512">+569 5678 4512</a>
+        <h3>Correo Electronico</h3>
+        <a href="mailto:empresamisperris@gmail.com">empresamisperris@gmail.com</a>
+        <h3>Redes Sociales</h3>
+        <a href="https://www.instagram.com/?hl=es-la">Mis_Perris_Oficial &#128247; Instagram</a>
         <br>
-        <a role="link" href="https://www.facebook.com/" id="footer_down">Fanpage Facebook &#128077;</a>
+        <a href="https://www.facebook.com/" id="footer_down">Fanpage Facebook &#128077;</a>
         <p style="color: white; font-size: 20px; padding-left: 10px; ">Todos los derechos Reservados &#169;</p>
     </footer>
 
