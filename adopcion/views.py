@@ -14,6 +14,9 @@ def form1(request):
 def prueba(request):
     return render(request, 'adopcion/prueba.html', {})
 
+def congrats(request):
+    return render(request, 'adopcion/congrats.html', {})
+
 def register_view(request):
     form = RegisterForm()
     if request.method == "POST":
@@ -51,7 +54,7 @@ def dog_detail(request, pk):
         AdoptionRegister.objects.create(owner=owner, dogname=dog.name)
         dog.update()
 
-        url = "http://migmartinezm.pythonanywhere.com/adopcion/"
+        url = "http://migmartinezm.pythonanywhere.com/congrats"
         return redirect(url)
     else:
         return render(request, 'adopcion/dog_detail.html', {'dog': dog})
