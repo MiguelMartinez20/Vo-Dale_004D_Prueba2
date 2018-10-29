@@ -7,7 +7,7 @@
                 <h3 id="galleryTitle"><b>Adopciones</b> </h3>
                 <div role="figure" class="contenedor">
                         <article>
-                            <form method="POST">{% csrf_token %}
+                            <form method="POST" id="DetailForm">{% csrf_token %}
                                 <h5 id="DogName"><b>{{ dog }}</b></h5>
                                 <img src="{{ dog.photo.url }}" alt="Perro Detalle" >
                                 <p><b>Raza: </b>{{ dog.race }}</p>

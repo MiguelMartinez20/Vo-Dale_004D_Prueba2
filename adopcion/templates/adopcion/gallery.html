@@ -9,8 +9,8 @@
 
                         {% for dog in dogs %}
                         <article>
-                            <h5 id="DogName"><b><a href="{% url 'dog_detail' pk=dog.pk %}">{{ dog }}</a></b></h5>
-                            <img src="{{ dog.photo.url }}" alt="Perro Disponible">
+                            <h5><b><a href="{% url 'dog_detail' pk=dog.pk %}">{{ dog }}</a></b></h5>
+                            <a href="{% url 'dog_detail' pk=dog.pk %}"><img src="{{ dog.photo.url }}" alt="Perro Disponible"></a>
                             <p><b>Raza: </b>{{ dog.race }}</p>
                             <p><b>Descripcion: </b> {{ dog.description }}</p>
                             <p><b>Estado: </b>{{ dog.state }}</p>
